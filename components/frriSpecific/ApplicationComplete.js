@@ -225,7 +225,7 @@ const ApplicationComplete = () => {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   className={`w-full font-normal py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg border-2 ${errors.firstName ? 'border-red-500 bg-red-50' : 'border-gray-300 bg-white'} text-gray-900 text-sm placeholder-gray-400 focus:border-gray-900 focus:outline-none transition-all duration-200`}
-                  placeholder="John"
+                  placeholder="First Name"
                 />
                 {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
               </div>
@@ -241,7 +241,7 @@ const ApplicationComplete = () => {
                   value={formData.lastName}
                   onChange={handleInputChange}
                   className={`w-full font-normal py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg border-2 ${errors.lastName ? 'border-red-500 bg-red-50' : 'border-gray-300 bg-white'} text-gray-900 text-sm placeholder-gray-400 focus:border-gray-900 focus:outline-none transition-all duration-200`}
-                  placeholder="Doe"
+                  placeholder="Last Name"
                 />
                 {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>}
               </div>
@@ -258,7 +258,7 @@ const ApplicationComplete = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 className={`w-full py-2.5 font-normal sm:py-3 px-3 sm:px-4 rounded-lg border-2 ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-300 bg-white'} text-gray-900 text-sm placeholder-gray-400 focus:border-gray-900 focus:outline-none transition-all duration-200`}
-                placeholder="john.doe@example.com"
+                placeholder="Email Address"
               />
               {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
             </div>
